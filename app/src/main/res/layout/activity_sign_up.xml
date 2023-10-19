@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_signup"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/back_icon1"
+
+            android:contentDescription="@string/backbutton">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/sign_up"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Sign_in_heading"
+
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="10dp"
+
+
+            >
+
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/editTextText"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                android:layout_marginStart="20dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginEnd="20dp"-->
+            <!--                android:ems="10"-->
+            <!--                android:inputType="text"-->
+            <!--                android:minHeight="48dp"-->
+            <!--                android:hint="@string/name" />-->
+
+            <EditText
+                android:id="@+id/editTextEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/email_edit_text"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="95dp"
+                android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/deep_red">
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:ems="15"
+                    android:hint="@string/password_edit_text"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+             android:layout_marginTop="160dp"
+            android:layout_marginEnd="20dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/deep_red">
+
+                <EditText
+                    android:id="@+id/editTextConfirmPassword"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:ems="15"
+                    android:hint="Confirm password"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/editTextPassword"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                android:layout_marginStart="20dp"-->
+            <!--                android:layout_marginTop="95dp"-->
+            <!--                android:layout_marginEnd="20dp"-->
+            <!--                android:ems="20"-->
+            <!--                android:hint="@string/password_edit_text"-->
+            <!--                android:inputType="textPassword"-->
+            <!--                android:minHeight="48dp" />-->
+<!--            <EditText-->
+<!--                android:id="@+id/editTextConfirmPassword"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="160dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:ems="20"-->
+<!--                android:hint="Confirm Password"-->
+<!--                android:inputType="textPassword"-->
+<!--                android:minHeight="48dp" />-->
+
+            <Button
+                android:id="@+id/button_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/shape_button_rounded"
+                android:gravity="center"
+                android:text="@string/sign_up"
+
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>
